@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;1,200&family=Quicksand:wght@300;400;700&display=swap" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
         <title>Gato Negro Pizzeria</title>
     </head>
+
     <body>
+        <header>
         <section id="overlay">
           <img src="gnplogo.png" alt="Gato Negro Pizzeria logo" id="logo" height="100">
           <hr>
-
           <form action="entradas.html" method="POST">
               <h1>Crea tu pizza!</h1>
+        </header>
+        <main>
           <section class="base-size">
-              <span>Escoge tu tama&ntilde;o:</span>
+              <span class="question">Escoge tu tama&ntilde;o:</span>
               <br>
               <input name="base-size" id="chica" value="chica" type="radio">
               <label for="chica">Chica $100</label>
@@ -20,10 +25,10 @@
               <input name="base-size" id="grande" value="grande" type="radio">
               <label for="grande">Grande $200</label>
           </section>
-          <hr>
+          <br>
 
           <section class="base-type">
-              <label for="base">Qué tipo de base gustas?</label>
+              <label for="base" class="question">Qué tipo de base gustas?</label>
               <select id="base" name="base">
                   <option value="napolitana">Napolitana</option>
                   <option value="romana">Romana</option>
@@ -31,10 +36,10 @@
                   <option value="feria">De feria</option>
               </select>
           </section>
-          <hr>
+          <br>
 
           <section class="queso-type">
-              <span>Tu queso de base es Mozzarella, gustas agregar otros? (+$5 c/u)</span>
+              <span class="question">Tu queso de base es Mozzarella, gustas agregar otros? (+$5 c/u)</span>
               <br>
               <input name="crema" id="crema" type="checkbox" value="filadelfia">
               <label for="crema">Queso Crema</label>
@@ -43,10 +48,10 @@
               <input name="parmigiano" id="parmigiano" type="checkbox" value="parmigiano">
               <label for="parmigiano">Queso Parmesano</label>
           </section>
-          <hr>
+          <br>
 
           <section class="protein">
-            <span>Escoge hasta 2 proteinas (>2 +$10c/u)</span>
+            <span class="question">Escoge hasta 2 proteinas (>2 +$10c/u)</span>
             <br>
           <table>
             <tr>
@@ -68,10 +73,10 @@
             
           </table>
         </section>
-        <hr>
+        <br>
 
         <section class="veggies">
-            <span>Escoge hasta 3 vegetales (>3 +$5c/u)</span>
+            <span class="question">Escoge hasta 3 vegetales (>3 +$5c/u)</span>
             <br>
           <table>
             <tr>
@@ -92,19 +97,19 @@
             </tr>
           </table>
         </section>
-        <hr>
+        <br>
 
         <section class="cooked">
-            <label for="doneness">A qué termino quieres tu pizza?</label>
+            <label for="doneness" class="question">A qué termino quieres tu pizza?</label>
             <br>
             <span>Le&ntilde;a normal</span>
             <input id="doneness" name="doneness" type="range" value="3" min="1" max="5">
             <span>Que arda compa!</span>
         </section>
-        <hr>
+        <br>
 
         <section class="sauce-type">
-            <label for="sauce">Qué tipo de salsa gustas?</label>
+            <label for="sauce" class="question">Qué tipo de salsa gustas?</label>
               <select id="sauce" name="sauce">
                   <option value="chimi">Chimichurri</option>
                   <option value="habanero">Habanero</option>
@@ -112,25 +117,27 @@
                   <option value="bluecheese">Blue cheese</option>
               </select>
         </section>
-        <hr>
+        <br>
 
         <section class="services">
-            <label for="servicios">Para cuantos servicios te mandamos?</label>
+            <label for="servicios" class="question">Para cuantos servicios te mandamos?</label>
             <input type="number" name="servicios" id="servicios">
           </section>
-          <hr>
+          <br>
 
           <section class="extra-info">
-            <label for="extra">Algo que desees agregar?</label>
+            <label for="extra" class="question">Algo que desees agregar?</label>
             <br>
             <textarea id="extra" name="extra" rows="3" cols="40"></textarea>
           </section>
-          <hr>
+          <br>
   
           <section class="submission">
             <input type="submit" value="Enviar orden">
           </section>
+          <br>
           </form>
         </section>
+        </main>
     </body>
 </html>
