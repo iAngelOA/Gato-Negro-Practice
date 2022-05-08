@@ -1,16 +1,20 @@
     body {
-        background: rgb(140, 150, 169);
-        color: white;
-        font-family: 'Quicksand', sans-serif;
+        background: rgb(223, 223, 223);
+        font-family: 'Poppins', sans-serif;
         text-align: center; 
     }
 
+    header {
+        color: rgb(0, 0, 0);
+    }
+
     main {
-        background-color: rgb(109, 114, 115);
+        background-color: rgb(58, 85, 95);
+        color: white;
         border-radius: 25px;
-        width: 60%;
+        width: 65%;
         margin: 1% auto;
-        height: 65vh;
+        height: 79vh;
     }
 
     table {
@@ -20,6 +24,7 @@
 
     .question {
         font-weight: bold;
+        color: rgb(216, 216, 216);
     }
 
     input[type=checkbox] {

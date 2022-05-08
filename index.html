@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;1,200&family=Quicksand:wght@300;400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;600&display=swap" rel="stylesheet">
         <link href="style.css" rel="stylesheet">
         <title>Gato Negro Pizzeria</title>
     </head>
@@ -12,18 +12,19 @@
           <img src="gnplogo.png" alt="Gato Negro Pizzeria logo" id="logo" height="100">
           <hr>
           <form action="entradas.html" method="POST">
-              <h1>Crea tu pizza!</h1>
+              <h1>CREA TU PIZZA</h1>
         </header>
         <main>
+            <br>
           <section class="base-size">
               <span class="question">Escoge tu tama&ntilde;o:</span>
               <br>
               <input name="base-size" id="chica" value="chica" type="radio">
-              <label for="chica">Chica $100</label>
+              <label for="chica" id="checkbox">Chica $100</label>
               <input name="base-size" id="mediana" value="mediana" type="radio">
-              <label for="mediana">Mediana $150</label>
+              <label for="mediana" id="checkbox">Mediana $150</label>
               <input name="base-size" id="grande" value="grande" type="radio">
-              <label for="grande">Grande $200</label>
+              <label for="grande" id="checkbox">Grande $200</label>
           </section>
           <br>
 
@@ -38,62 +39,62 @@
           </section>
           <br>
 
-          <section class="queso-type">
+          <section class="queso-type" id="checklist">
               <span class="question">Tu queso de base es Mozzarella, gustas agregar otros? (+$5 c/u)</span>
               <br>
               <input name="crema" id="crema" type="checkbox" value="filadelfia">
-              <label for="crema">Queso Crema</label>
+              <label for="crema" id="checkbox">Queso Crema</label>
               <input name="cheddar" id="cheddar" type="checkbox" value="cheddar">
-              <label for="cheddar">Queso Cheddar</label>
+              <label for="cheddar" id="checkbox">Queso Cheddar</label>
               <input name="parmigiano" id="parmigiano" type="checkbox" value="parmigiano">
-              <label for="parmigiano">Queso Parmesano</label>
+              <label for="parmigiano" id="checkbox">Queso Parmesano</label>
           </section>
           <br>
 
-          <section class="protein">
+          <section class="protein" id="checklist">
             <span class="question">Escoge hasta 2 proteinas (>2 +$10c/u)</span>
             <br>
           <table>
             <tr>
                 <td><input name="peppe" id="peppe" type="checkbox" value="pepperoni">
-                    <label for="peppe">Pepperoni</label></td>
+                    <label for="peppe" id="checkbox">Pepperoni</label></td>
                 <td><input name="salami" id="salami" type="checkbox" value="salami">
-                    <label for="salami">Salami</label></td>
+                    <label for="salami" id="checkbox">Salami</label></td>
                 <td><input name="jamon" id="jamon" type="checkbox" value="jamon">
-                    <label for="jamon">Jamón</label></td>
+                    <label for="jamon" id="checkbox">Jamón</label></td>
             </tr>
             <tr>
                 <td><input name="salchi" id="salchi" type="checkbox" value="salchicha">
-                    <label for="salchi">Salchicha</label></td>
+                    <label for="salchi" id="checkbox">Salchicha</label></td>
                 <td><input name="bone" id="bone" type="checkbox" value="boneless">
-                    <label for="bone"></label>Boneless</td>
+                    <label for="bone" id="checkbox"></label>Boneless</td>
                 <td><input name="shrimp" id="shrimp" type="checkbox" value="camaron">
-                    <label for="shrimp">Camarón</label></td>
+                    <label for="shrimp" id="checkbox">Camarón</label></td>
             </tr>
             
           </table>
         </section>
         <br>
 
-        <section class="veggies">
+        <section class="veggies" id="checklist">
             <span class="question">Escoge hasta 3 vegetales (>3 +$5c/u)</span>
             <br>
           <table>
             <tr>
                 <td><input name="onion" id="onion" type="checkbox" value="cebolla">
-                    <label for="onion">Cebolla</label></td>
+                    <label for="onion" id="checkbox">Cebolla</label></td>
                 <td><input name="papa" id="papa" type="checkbox" value="papa">
-                    <label for="papa">Papa</label></td>
+                    <label for="papa" id="checkbox">Papa</label></td>
                 <td><input name="mushroom" id="mushroom" type="checkbox" value="champis">
-                    <label for="mushroom">Champi&ntilde;ones</label></td>
+                    <label for="mushroom" id="checkbox">Champi&ntilde;ones</label></td>
             </tr>
             <tr>
                 <td><input name="pimiento" id="pimiento" type="checkbox" value="pimiento">
-                    <label for="pimiento">Pimiento</label></td>
+                    <label for="pimiento" id="checkbox">Pimiento</label></td>
                 <td><input name="tunas" id="tunas" type="checkbox" value="aceitunas">
-                    <label for="tunas"></label>Aceitunas</td>
+                    <label for="tunas" id="checkbox"></label>Aceitunas</td>
                 <td><input name="corn" id="corn" type="checkbox" value="elotito">
-                    <label for="corn">Elote</label></td>
+                    <label for="corn" id="checkbox">Elote</label></td>
             </tr>
           </table>
         </section>
@@ -103,7 +104,7 @@
             <label for="doneness" class="question">A qué termino quieres tu pizza?</label>
             <br>
             <span>Le&ntilde;a normal</span>
-            <input id="doneness" name="doneness" type="range" value="3" min="1" max="5">
+            <input id="doneness" name="doneness" type="range" value="0">
             <span>Que arda compa!</span>
         </section>
         <br>
